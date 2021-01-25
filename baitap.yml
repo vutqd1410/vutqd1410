@@ -9,7 +9,7 @@
     	vlan_id: "{{ item.number }}"
       name: "{{ item.name }}"
       name: loopback 1
-      ipv4: 10.0.2.1/24
+      ipv4: 10.0.2.{{ item.number }}/24
       state: present
     with_items:
     	- { number: 50, name: "phong 50" }
