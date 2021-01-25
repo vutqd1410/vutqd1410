@@ -4,10 +4,10 @@
   gather_facts: no
 
   tasks:
-  - name: dat ip loopback
-    ios_lan:    	    
-     name: loopback {{ item.number }}
-     ipv4: 10.0.2.{{ item.number }}/24
+   - name: dat ip loopback
+     ios_lan:    	    
+      name: loopback {{ item.number }}
+      ipv4: 10.0.2.{{ item.number }}/24
     with_items:
      - { number: 1 }
      - { number: 2 }
