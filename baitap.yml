@@ -9,8 +9,8 @@
       name: loopback {{ item.number }}
       ipv4: 10.0.2.{{ item.number }}/24
     with_items:
-     - { number: 1 }
-     - { number: 2 }
-     - { number: 3 }
+      - { number: 1 }
+      - { number: 2 }
+      - { number: 3 }
       
    
